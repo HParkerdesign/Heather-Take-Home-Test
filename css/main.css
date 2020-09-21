@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Dosis|Patrick+Hand);
+
+
+html,
+body {
+    font-family: Dosis;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    color: #9f9e9e;
+}
+
+
+
+/*Header Banner*/
+
+.header_banner {
+    background-image:url(../pic/Banner.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.site_header .header_box {
+    position: relative;
+    z-index: 1000;
+    padding: 30px 0 45px;
+}
+
+.site_header .logo>img {
+    display: block;
+}
+
+.header_logo_part.with_border .logo>img {
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.site_header {
+    background-image:url(../pic/Banner.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.slider_vs_menu .site_header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.site_header.loaded {
+    opacity: 1;
+}
+
+.site_header .logo {
+    display: inline-block;
+}
+
+
+
+/*Rev Slider Overrides*/
+.rev_slider .tp-bgimg.defaultimg {
+    height: 1070px;
+}
+
+.rev_slider_wrapper, .rev_slider, .tp-fullwidth-forcer, .rev_slider .tp-bgimg.defaultimg {
+    height: 760px !important;
+
+}
+
+.rev_slider_wrapper {
+    background-color: #26b4d7 !important;
+}
+
+/*Text style in rev slider*/
+
+.tp-caption.home-h2,
+.home-h2 {
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 65px;
+    line-height: 65px;
+    font-weight: 400;
+    font-size: 2em;
+    font-style: normal;
+    font-family: Patrick Hand;
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 1.00);
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0px 0px 0px 0px;
+    text-align: left;
+    text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px
+}
+
+.tp-caption.home-h1,
+.home-h1 {
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Patrick Hand;
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 1.00);
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0px 0px 0px 0px;
+    text-align: left;
+    text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px
+}
+
+
+/*Information Area style for clouds, and text*/
+
+.benefits_area {
+    padding: 50px 0;
+    border-top-width: 4px;
+    border-style: solid;
+    border-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.benefits_area.wave {
+    background: transparent;
+    z-index: 15;
+    padding: 30px 0;
+    border: 0;
+}
+
+.benefits_area .cloud_wrapper {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    width: 100%;
+    bottom: -30px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.benefits_area .cloud {
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+.benefits_container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -15px 0;
+}
+
+.benefits_container .cws-widget {
+    -webkit-flex: 1 1 270px;
+    -ms-flex: 1 1 270px;
+    flex: 1 1 270px;
+    min-width: calc(25% - 30px);
+    margin: 25px 15px 25px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.benefits_area.wave .cws-widget {
+    border-radius: 25% 25% 25% 25%/60% 60% 40% 40%;
+    position: relative;
+    z-index: 1;
+}
+
+.benefits_area.wave .cws-widget:before,
+.benefits_area.wave .cws-widget:after,
+.benefits_area.wave .cws-widget>*:not(.search-form):before {
+    content: '';
+    width: 70%;
+    height: calc(100% + 60px);
+    border-radius: 100%;
+    background: #FFF;
+    position: absolute;
+    top: -30px;
+    left: 15%;
+    z-index: -1;
+}
+
+.benefits_area.wave .cws-widget>*:first-child:not(.search-form):before,
+.benefits_area.wave .cws-widget>*:last-child:not(.search-form):before {
+    width: 20%;
+    max-width: 170px;
+    top: auto;
+    bottom: -15px;
+    right: 18%;
+    left: auto;
+    height: 100%;
+    border-radius: 1000px;
+}
+
+.benefits_area.wave .cws-widget>*:last-child:not(.search-form):before {
+    right: auto;
+    left: 15%;
+}
+
+.benefits_area.wave .cws-widget:after {
+    width: 28%;
+    max-width: 170px;
+    top: -19px;
+    right: 14%;
+    left: auto;
+    height: 100%;
+    border-radius: 1000px;
+}
+
+.benefits_container .cws_textwidget_content,
+.benefits_container .widget-title {
+    text-align: center;
+}
+
+.benefits_container .cws-widget > *:not(:first-child):not(:empty),
+.benefits_container .cws-widget .widget_carousel .owl-controls {
+    margin-top: 15px;
+}
+
+.widget_title_text_section {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 35px!important;
+    font-weight: 800;
+}
+
+.cloud_wrapper {
+    margin-top: -35px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.benefits_area.wave {
+    background: transparent;
+    position: relative;
+    z-index: 15;
+    padding: 30px 0;
+    border: 0;
+}
+
+.benefits_area .cloud_wrapper {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    width: 100%;
+    bottom: -30px;
+    overflow: hidden;
+    margin: 0;
+}
+
+
